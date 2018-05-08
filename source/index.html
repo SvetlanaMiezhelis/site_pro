@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+
+<body>
+
+<header class="main-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-4 col-xs-12">
+        <ul class="main-header__list">
+          <li><a class="main-header__link">PayBill</a></li>
+          <li><a class="main-header__link">Schedule</a></li>
+          <li><a class="main-header__link">Customer Support</a></li>
+          <li><a class="main-header__link">Request Services</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <nav class="navigation">
+      <div class="row">
+
+        <div class="col-md-5 col-md-offset-5">
+          <ul class="navigation__site-nav">
+            <li class="navigation__site-nav-item"><a href="#" class="navigation__site-nav-link">Residents</a></li>
+            <li class="navigation__site-nav-item"><a href="#" class="navigation__site-nav-link">Businesses </a></li>
+            <li class="navigation__site-nav-item"><a href="#" class="navigation__site-nav-link">Communities</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-md-offset-0 col-xs-6 col-xs-offset-6">
+          <ul class="navigation__user-nav">
+            <li class="navigation__user-nav-item">
+              <img src="img/icon-login.svg" alt="login" height="20" width="20" class="navigation__img">
+              <a href="#" class="navigation__user-nav-link">Login</a>
+            </li>
+            <li class="navigation__user-nav-item">
+              <img src="img/icon-search.svg" alt="search" height="20" width="20" class="navigation__img">
+              <a href="#" class="navigation__user-nav-link">Search</a>
+            </li>
+
+            <li class="navigation__menu">
+              <img src="img/menu.svg" alt="search" height="27" width="32">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="about">
+      <div class="row">
+
+        <div class="col-md-5 col-xs-12">
+          <div class="about__img-wrapper">
+            <img src="img/picture.jpg" alt="picture 1" class="about__img">
+          </div>
+        </div>
+
+        <div class="col-md-7 col-xs-12">
+          <h1 class="about__title">Welcome</h1>
+          <p class="about__description">
+            Basic information about the regional municipality.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusamus at commodi, culpa cupiditate dicta eveniet magnam nisi nulla numquam obcaecati quaerat quas reprehenderit similique sunt.
+            Basic information about the regional municipality.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusamus at commodi, culpa cupiditate dicta eveniet magnam nisi nulla numquam obcaecati quaerat quas reprehenderit similique sunt.
+          </p>
+
+          <div class="row">
+
+            <div class="col-md-6">
+              <ul class="about__list">
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <ul class="about__list">
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <section class="form-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2 class="form-section__title">Find out what services are available in your area by providing your address below </h2>
+        </div>
+      </div>
+
+      <form action="#" class="form-section__form">
+        <div class="row">
+
+          <div class="col-md-10 col-xs-12">
+
+            <div class="form-section__input-wrapper">
+              <input type="text" placeholder="123 Fake Street" class="form-section__input">
+
+              <input type="text" placeholder="85303" class="form-section__input">
+            </div>
+          </div>
+
+          <div class="col-md-2 col-xs-12">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="select-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-xs-12 text-center">
+          <h2 class="select-section__title">Select an Address</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <p class="select-section__description text-center">We found multiple versions of the address you entered.
+            Please select the exact address you are inquiring about and click submit selected address.
+            Republic Services is dedicated to providing the best service possible so we appreciate your
+            help with this additional step.
+          </p>
+        </div>
+      </div>
+
+      <form class="form">
+        <div class="form__wrapper">
+
+          <label class="form__label">
+            <input type="radio" name="address" class="form__input">
+            <span class="form__radio-button" tabindex="0"></span>
+            <div class="form__details">
+              <h3 class="form__title">Address Entered</h3>
+              <p class="form__descr">
+                123 Fake Street
+             <span class="form__descr-brake">Test City, Arizona</span>
+              85203</p>
+
+            </div>
+          </label>
+
+
+          <label class="form__label">
+            <input type="radio" name="address" class="form__input" checked>
+            <span class="form__radio-button" tabindex="0"></span>
+            <div class="form__details">
+              <h3 class="form__title">Alternate Address</h3>
+              <p class="form__descr">123 Fake Street
+                <span class="form__descr-brake">Test City, Arizona</span>
+                85203</p>
+            </div>
+          </label>
+
+
+          <label class="form__label">
+            <input type="radio" name="zone" class="form__input">
+            <span class="form__radio-button" tabindex="0"></span>
+            <div class="form__details">
+              <h3 class="form__title">Zone 1</h3>
+              <p class="form__descr">123 Fake Street
+                <span class="form__descr-brake">Test City, Arizona</span>
+                85203</p>
+
+            </div>
+          </label>
+
+
+          <label class="form__label">
+            <input type="radio" name="zone" class="form__input" checked>
+            <span class="form__radio-button" tabindex="0"></span>
+            <div class="form__details">
+              <h3 class="form__title">Zone 2</h3>
+              <p class="form__descr">123 Fake Street
+                <span class="form__descr-brake">Test City, Arizona</span>
+                85203</p>
+            </div>
+          </label>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 col-xs-12 text-center">
+            <button type="submit" class="btn btn--form">Submit Selected Address</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+</main>
+</body>
+

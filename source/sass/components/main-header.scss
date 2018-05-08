@@ -1,0 +1,39 @@
+.main-header{
+  background-color: #00497f;
+  font-size:13px;
+  line-height: 30px;
+
+  @media (max-width: 320px) {
+    font-size:10px;
+  }
+
+  .main-header__list{
+    @include ul-reset;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    @media (max-width: 320px) {
+      justify-content: space-between;
+    }
+  }
+
+  .main-header__list>li{
+    margin-left: 30px;
+
+    @media (max-width: 320px) {
+      margin-left: 0;
+    }
+  }
+
+  .main-header__link{
+    display: block;
+    color: #ffffff;
+    padding: 12px 20px;
+    cursor: pointer;
+
+    @media (max-width: 320px) {
+      padding: 5px;
+    }
+  }
+}
