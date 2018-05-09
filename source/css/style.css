@@ -23,6 +23,18 @@ body {
   height: 1px;
   clip: rect(0, 0, 0, 0); }
 
+.no-gutter-left-desktop-only {
+  padding-left: 0; }
+  @media (max-width: 768px) {
+    .no-gutter-left-desktop-only {
+      padding-left: 15px; } }
+
+.no-gutter-right-desktop-only {
+  padding-right: 0; }
+  @media (max-width: 768px) {
+    .no-gutter-right-desktop-only {
+      padding-right: 15px; } }
+
 .main-header {
   background-color: #00497f;
   font-size: 13px;
@@ -316,14 +328,15 @@ body {
 
 .btn {
   border: 2px solid #33bff5;
-  padding: 14px 35px;
-  background-color: #ffffff;
+  padding: 17px 35px;
+  background-color: #fff;
   border-radius: 0;
   color: #33bff5;
   font-size: 18px;
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: 1; }
   @media (max-width: 320px) {
     .btn {
       width: 100%;
-      padding: 12px;
+      padding: 15px;
       font-size: 16px; } }

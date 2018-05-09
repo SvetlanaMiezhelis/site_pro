@@ -25,3 +25,19 @@ body {
   height: 1px;
   clip: rect(0, 0, 0, 0);
 }
+
+.no-gutter-left-desktop-only{
+  padding-left: 0;
+
+  @media (max-width: 768px) {
+    padding-left: 15px;
+  }
+}
+
+.no-gutter-right-desktop-only{
+  padding-right: 0;
+
+  @media (max-width: 768px) {
+    padding-right: 15px;
+  }
+}
