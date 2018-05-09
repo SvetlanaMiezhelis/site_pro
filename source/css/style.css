@@ -23,6 +23,16 @@ body {
   height: 1px;
   clip: rect(0, 0, 0, 0); }
 
+.container {
+  width: 1027px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (max-width: 320px) {
+    .container {
+      width: 320px;
+      padding-left: 20px;
+      padding-right: 20px; } }
+
 .no-gutter-left-desktop-only {
   padding-left: 0; }
   @media (max-width: 768px) {
@@ -69,11 +79,13 @@ body {
   .main-header .main-header__link {
     display: block;
     color: #ffffff;
-    padding: 12px 20px;
+    padding: 6px 16px;
     cursor: pointer; }
     @media (max-width: 320px) {
       .main-header .main-header__link {
         padding: 5px; } }
+  .main-header .main-header__link:last-child {
+    padding-right: 0; }
 
 .navigation {
   border-bottom: 1px solid #d9d9d9;
@@ -98,8 +110,9 @@ body {
             flex-direction: row;
     line-height: 1.2; }
   .navigation .navigation__site-nav {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 18px; }
     @media (max-width: 768px) {
       .navigation .navigation__site-nav {
@@ -107,15 +120,13 @@ body {
   .navigation .navigation__site-nav-link,
   .navigation .navigation__user-nav-link {
     display: block;
-    padding: 10px; }
+    padding: 15px 10px; }
   .navigation .navigation__user-nav {
     font-size: 15px;
-    font-weight: 600; }
-    @media (max-width: 768px) {
-      .navigation .navigation__user-nav {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; } }
+    font-weight: 600;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .navigation .navigation__user-nav-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -180,7 +191,7 @@ body {
         font-size: 16px;
         line-height: 22px; } }
   .form-section .form-section__input {
-    padding: 17px 25px;
+    padding: 17px 20px;
     width: 50%;
     border: 2px solid #acacac; }
     @media (max-width: 768px) {
@@ -190,7 +201,8 @@ body {
   .form-section .form-section__input:first-child {
     border-right: none; }
   .form-section .form-section__input:last-child {
-    border-left: none; }
+    border-left: none;
+    padding-left: 50px; }
     @media (max-width: 320px) {
       .form-section .form-section__input:last-child {
         padding-left: 30px; } }
@@ -204,7 +216,7 @@ body {
             flex-direction: row; }
 
 .select-section {
-  padding: 25px 0;
+  padding: 10px 0 50px 0;
   background-color: #ffffff;
   font-weight: 300; }
   .select-section .select-section__title {
@@ -216,12 +228,11 @@ body {
         font-size: 24px;
         margin: 10px 0; } }
   .select-section .select-section__description {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
-    margin-bottom: 25px; }
+    margin-bottom: 10px; }
     @media (max-width: 320px) {
       .select-section .select-section__description {
-        font-size: 16px;
         line-height: 20px;
         text-align: left; } }
 
@@ -234,18 +245,19 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin-bottom: 30px; }
 
 .form__label-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 45%;
+  width: 46%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 30px; }
+  margin-bottom: 5px; }
   @media (max-width: 768px) {
     .form__label-wrapper {
       width: 100%;
@@ -286,7 +298,7 @@ body {
   text-decoration: underline;
   color: #11b3f2;
   cursor: pointer;
-  width: 41%; }
+  width: 46%; }
   @media (max-width: 768px) {
     .form__link {
       margin-left: 40px;
@@ -336,7 +348,7 @@ body {
 
 .form__descr {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 22px;
   font-weight: 400; }
   @media (max-width: 320px) {
     .form__descr {
@@ -347,7 +359,7 @@ body {
 
 .btn {
   border: 2px solid #33bff5;
-  padding: 17px 35px;
+  padding: 17px 40px;
   background-color: #fff;
   border-radius: 0;
   color: #33bff5;
@@ -359,3 +371,6 @@ body {
       width: 100%;
       padding: 15px;
       font-size: 16px; } }
+
+.btn--form {
+  padding: 17px 30px; }

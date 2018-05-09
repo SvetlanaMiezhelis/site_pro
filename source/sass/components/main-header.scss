@@ -1,13 +1,13 @@
-.main-header{
+.main-header {
   background-color: #00497f;
-  font-size:13px;
+  font-size: 13px;
   line-height: 30px;
 
   @media (max-width: 320px) {
-    font-size:10px;
+    font-size: 10px;
   }
 
-  .main-header__list{
+  .main-header__list {
     @include ul-reset;
     display: flex;
     flex-direction: row;
@@ -18,7 +18,7 @@
     }
   }
 
-  .main-header__list>li{
+  .main-header__list > li {
     margin-left: 30px;
 
     @media (max-width: 320px) {
@@ -26,14 +26,18 @@
     }
   }
 
-  .main-header__link{
+  .main-header__link {
     display: block;
     color: #ffffff;
-    padding: 12px 20px;
+    padding: 6px 16px;
     cursor: pointer;
 
     @media (max-width: 320px) {
       padding: 5px;
     }
+  }
+
+  .main-header__link:last-child {
+    padding-right: 0;
   }
 }
