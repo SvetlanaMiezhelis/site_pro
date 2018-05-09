@@ -122,9 +122,9 @@
           <div class="col-md-10 col-xs-12 no-gutter-right-desktop-only">
 
             <div class="form-section__input-wrapper">
-              <input type="text" placeholder="123 Fake Street" class="form-section__input">
+              <input type="text" value="123 Fake Street" class="form-section__input" placeholder="Address">
 
-              <input type="text" placeholder="85303" class="form-section__input">
+              <input type="text" value="85303" class="form-section__input" placeholder="Postcode">
             </div>
           </div>
 
@@ -158,56 +158,62 @@
       <form class="form">
         <div class="form__wrapper">
 
-          <label class="form__label">
-            <input type="radio" name="address" class="form__input">
-            <span class="form__radio-button" tabindex="0"></span>
-            <div class="form__details">
-              <h3 class="form__title">Address Entered</h3>
-              <p class="form__descr">
-                123 Fake Street
-             <span class="form__descr-brake">Test City, Arizona</span>
-              85203</p>
+          <div class="form__label-wrapper">
+            <label class="form__label">
+              <input type="radio" name="address" class="form__input">
+              <span class="form__radio-button" tabindex="0"></span>
+              <div class="form__details">
+                <h3 class="form__title">Address Entered</h3>
+                <p class="form__descr">
+                  123 Fake Street
+                  <span class="form__descr-brake">Test City, Arizona</span>
+                  85203</p>
 
-            </div>
-          </label>
+              </div>
+            </label>
+            <a class="form__link">Edit Address</a>
+          </div>
 
+          <div class="form__label-wrapper">
+            <label class="form__label">
+              <input type="radio" name="address" class="form__input" checked>
+              <span class="form__radio-button" tabindex="0"></span>
+              <div class="form__details">
+                <h3 class="form__title">Alternate Address</h3>
+                <p class="form__descr">123 Fake Street
+                  <span class="form__descr-brake">Test City, Arizona</span>
+                  85203</p>
+              </div>
+            </label>
+          </div>
 
-          <label class="form__label">
-            <input type="radio" name="address" class="form__input" checked>
-            <span class="form__radio-button" tabindex="0"></span>
-            <div class="form__details">
-              <h3 class="form__title">Alternate Address</h3>
-              <p class="form__descr">123 Fake Street
-                <span class="form__descr-brake">Test City, Arizona</span>
-                85203</p>
-            </div>
-          </label>
+          <div class="form__label-wrapper">
+            <label class="form__label">
+              <input type="radio" name="zone" class="form__input">
+              <span class="form__radio-button" tabindex="0"></span>
+              <div class="form__details">
+                <h3 class="form__title">Zone 1</h3>
+                <p class="form__descr">123 Fake Street
+                  <span class="form__descr-brake">Test City, Arizona</span>
+                  85203</p>
 
+              </div>
+            </label>
+            <a class="form__link"> Undo</a>
+          </div>
 
-          <label class="form__label">
-            <input type="radio" name="zone" class="form__input">
-            <span class="form__radio-button" tabindex="0"></span>
-            <div class="form__details">
-              <h3 class="form__title">Zone 1</h3>
-              <p class="form__descr">123 Fake Street
-                <span class="form__descr-brake">Test City, Arizona</span>
-                85203</p>
-
-            </div>
-          </label>
-
-
-          <label class="form__label">
-            <input type="radio" name="zone" class="form__input" checked>
-            <span class="form__radio-button" tabindex="0"></span>
-            <div class="form__details">
-              <h3 class="form__title">Zone 2</h3>
-              <p class="form__descr">123 Fake Street
-                <span class="form__descr-brake">Test City, Arizona</span>
-                85203</p>
-            </div>
-          </label>
-
+          <div class="form__label-wrapper">
+            <label class="form__label">
+              <input type="radio" name="zone" class="form__input" checked>
+              <span class="form__radio-button" tabindex="0"></span>
+              <div class="form__details">
+                <h3 class="form__title">Zone 2</h3>
+                <p class="form__descr">123 Fake Street
+                  <span class="form__descr-brake">Test City, Arizona</span>
+                  85203</p>
+              </div>
+            </label>
+          </div>
         </div>
 
         <div class="row">
