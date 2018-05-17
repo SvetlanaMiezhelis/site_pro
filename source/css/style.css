@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  min-height: 500px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#818181));
   background-image: linear-gradient(to bottom, #ffffff, #818181);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#818181');
