@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "Verdana";
+  src: url("../fonts/Verdana-Bold.woff2") format("woff2"), url("../fonts/Verdana-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
 .container {
   width: 100%;
+  min-height: 500px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#818181));
   background-image: linear-gradient(to bottom, #ffffff, #818181);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#818181');
@@ -11,47 +18,53 @@
   height: 100vh; }
 
 .btn {
-  padding: 15px;
-  padding-left: 50px;
-  background-color: #080808;
+  padding: 25px 25px 25px 70px;
+  background-color: #171717;
   color: #ffffff;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: "Verdana", "Arial", sans-serif;
+  font-size: 16px;
+  -webkit-box-shadow: inset 0 2px 13px 2px rgba(255, 255, 255, 0.61);
+  box-shadow: inset 0 2px 13px 2px rgba(255, 255, 255, 0.61); }
   @media (min-width: 960px) {
     .btn {
       white-space: nowrap; } }
 
 .btn::before {
   content: "";
-  background-color: #f2f2f2;
+  background-image: url("../img/glare.png");
   width: 100%;
-  height: 20px;
+  height: 37px;
   display: block;
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  opacity: 0.3;
-  border-radius: 10px;
-  z-index: 5; }
+  opacity: 0.8;
+  border-radius: 15px;
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .btn::after {
   content: "";
   display: block;
-  width: 33px;
-  height: 33px;
+  width: 35px;
+  height: 35px;
   background-image: url("../img/icon.png");
   background-size: contain;
   position: absolute;
-  top: 50%;
-  left: 8px;
+  top: 54%;
+  left: 27px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
 
